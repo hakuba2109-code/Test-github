@@ -10,9 +10,24 @@ namespace Test_github
     {
         static void Main(string[] args)
         {
-            Class1 person = new Class1("Nguyen Van A", 25, "Ha Noi");
-            person.InThongTin();
-            Console.ReadLine();
+            List<Class1> danhSach = new List<Class1>();
+            Console.Write("nhap so luong: ");   
+            int n = int.Parse(Console.ReadLine());
+            for( int i =0; i < n; i++)
+            {
+                Console.Write("nhap ho ten: ");
+                string hoTen = Console.ReadLine();
+                Console.Write("nhap tuoi: ");
+                int tuoi = int.Parse(Console.ReadLine());
+                Console.Write("nhap dia chi: ");
+                string diaChi = Console.ReadLine();
+                Class1 sv = new Class1(hoTen, tuoi, diaChi);
+                danhSach.Add(sv);
+            }
+            foreach( Class1 sv in danhSach)
+            {
+                sv.InThongTin();
+            }
         }
     }
 }

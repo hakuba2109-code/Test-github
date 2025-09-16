@@ -19,9 +19,9 @@ namespace Test_github
         }
         public void InThongTin()
         {
-            Console.WriteLine("Họ tên: " + hoTen);
-            Console.WriteLine("Tuổi: " + tuoi);
-            Console.WriteLine("Địa chỉ: " + diaChi);
+            Console.WriteLine("Ho ten: " + hoTen);
+            Console.WriteLine("Tuoi: " + tuoi);
+            Console.WriteLine("Dia chi: " + diaChi);
         }
     }
 }
