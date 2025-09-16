@@ -10,7 +10,7 @@ namespace Test_github
     {
         static void Main(string[] args)
         {
-            Class1 person = new Class1("Nguyễn Văn A", 25, "Hà Nội");
+            Class1 person = new Class1("Nguyen Van A", 25, "Ha Noi");
             person.InThongTin();
             Console.ReadLine();
         }
